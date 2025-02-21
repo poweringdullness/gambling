@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #1e1e1e;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.casino-container {
+  width: 80%;
+  max-width: 1200px;
+  background: #2a2a2a;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 36px;
+  color: #ff9900;
+}
+
+#balance {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.games {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.game {
+  background: #3a3a3a;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.game:hover {
+  background: #4a4a4a;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.game-controls {
+  margin: 10px 0;
+}
+
+input[type="number"] {
+  width: 80px;
+  padding: 5px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+button.game-btn {
+  padding: 10px 20px;
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.game-btn:hover {
+  background-color: #ffcc00;
+}
+
+#coin-result, #slot-result, #roulette-result {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.multiplayer {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.multiplayer h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.game-room {
+  background: #444;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#room-status {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #ff9900;
+}
