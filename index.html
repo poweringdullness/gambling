@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casino Simulator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="casino-container">
+    <header>
+      <h1>Casino Simulator</h1>
+      <div id="balance">Balance: $1000</div>
+    </header>
+    
+    <div class="games">
+      <!-- Coin Flip -->
+      <div class="game">
+        <h2>Coin Flip</h2>
+        <div class="game-controls">
+          <label for="coin-bet">Bet: $</label>
+          <input type="number" id="coin-bet" value="10" min="1" max="100">
+          <button class="game-btn" onclick="flipCoin()">Flip</button>
+        </div>
+        <div id="coin-result"></div>
+      </div>
+
+      <!-- Slot Machine -->
+      <div class="game">
+        <h2>Slot Machine</h2>
+        <div class="game-controls">
+          <label for="slot-bet">Bet: $</label>
+          <input type="number" id="slot-bet" value="20" min="1" max="100">
+          <button class="game-btn" onclick="playSlot()">Spin</button>
+        </div>
+        <div id="slot-result"></div>
+      </div>
+
+      <!-- Roulette -->
+      <div class="game">
+        <h2>Roulette</h2>
+        <div class="game-controls">
+          <label for="roulette-bet">Bet: $</label>
+          <input type="number" id="roulette-bet" value="50" min="1" max="100">
+          <button class="game-btn" onclick="spinRoulette()">Spin</button>
+        </div>
+        <div id="roulette-result"></div>
+      </div>
+    </div>
+
+    <!-- Multiplayer -->
+    <div class="multiplayer">
+      <h2>Multiplayer</h2>
+      <div class="game-room">
+        <button class="game-btn" onclick="joinRoom()">Join Room</button>
+        <div id="room-status">Not connected</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
